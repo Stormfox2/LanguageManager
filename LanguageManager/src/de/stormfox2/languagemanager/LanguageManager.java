@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import de.stormfox2.languagemanager.config.CMySQL;
 import de.stormfox2.languagemanager.mysql.MySQL;
 import de.stormfox2.languagemanager.utils.Language;
+import de.stormfox2.languagemanager.utils.Manager;
 
 public class LanguageManager extends JavaPlugin{
 
@@ -17,7 +18,7 @@ public class LanguageManager extends JavaPlugin{
 		MySQL.getInstance().connect();
 		super.onEnable();
 		
-		new Language("de-de", "Deutsch");
+		new Manager();
 		
 	}
 	
