@@ -34,7 +34,6 @@ public class Language {
 				
 				String key = result.getString(1);
 				String value = result.getString(2);
-				System.out.println("key: " + key);
 				addValue(key, value);
 			}
 			request.close();
